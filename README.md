@@ -1,3 +1,3 @@
-# quality-runnin
+# quality-running
 
-quality running in colorado and elsewhereg
+quality running in colorado and elsewhere
