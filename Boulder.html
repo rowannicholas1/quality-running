@@ -16,17 +16,23 @@
                     transition-duration: 0.4s;
                     cursor: pointer;
                 }
+                .hidden {
+                    display: none;
+                }
+                .iframe-container {
+                    display: none;
+                }
             </style>
     </head>
     <body bgcolor="#32a86b"> <center>
         <a href="index.html" style="color:#ffffff;"><button>Home</button></a>
-        <a href="Boulder.html" style="color:#ffffff;"><button>Boulder</button></a>
-        <a href="Broomfield.html" style="color:#ffffff;"><button>Broomfield</button></a>
-        <a href="Denver.html" style="color:#ffffff;"><button>Denver</button></a>
+        <a href="boulder.html" style="color:#ffffff;"><button>Boulder</button></a>
+        <a href="broomfield.html" style="color:#ffffff;"><button>Broomfield</button></a>
+        <a href="denver.html" style="color:#ffffff;"><button>Denver</button></a>
         <a href="san_diego.html" style="color:#ffffff;"><button>San Diego</button></a>
-        <a href="Mountains.html" style="color:#ffffff;"><button>Mountains</button></a>
-        <a href="South Denver.html" style="color:#ffffff;"><button>South Denver</button></a>
+        <a href="mountains.html" style="color:#ffffff;"><button>Mountains</button></a>
         <a href="golden.html" style="color:#ffffff;"><button>Golden</button></a>
+        <a href="south_colorado.html" style="color:#ffffff;"><button>South Colorado</button></a>
         <center>
         <h1 style="color:#ffffff;" class="center">Quality Running</h1>
         <br>
@@ -77,5 +83,15 @@
         <br>
         <br>
 
+        <script>
+            function hideShow(id) {
+                var x = document.getElementById(id);
+                if (x.style.display === "none" || x.style.display === "") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+        </script>
     </body> </center>
 </html>

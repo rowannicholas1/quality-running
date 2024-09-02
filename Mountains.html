@@ -16,72 +16,112 @@
                     transition-duration: 0.4s;
                     cursor: pointer;
                 }
+                .hidden {
+                    display: none;
+                }
+                .iframe-container {
+                    display: none;
+                }
             </style>
     </head>
     <body bgcolor="#32a86b"> <center>
         <a href="index.html" style="color:#ffffff;"><button>Home</button></a>
-        <a href="Boulder.html" style="color:#ffffff;"><button>Boulder</button></a>
-        <a href="Broomfield.html" style="color:#ffffff;"><button>Broomfield</button></a>
-        <a href="Denver.html" style="color:#ffffff;"><button>Denver</button></a>
+        <a href="boulder.html" style="color:#ffffff;"><button>Boulder</button></a>
+        <a href="broomfield.html" style="color:#ffffff;"><button>Broomfield</button></a>
+        <a href="denver.html" style="color:#ffffff;"><button>Denver</button></a>
         <a href="san_diego.html" style="color:#ffffff;"><button>San Diego</button></a>
-        <a href="Mountains.html" style="color:#ffffff;"><button>Mountains</button></a>
-        <a href="South Denver.html" style="color:#ffffff;"><button>South Denver</button></a>
+        <a href="mountains.html" style="color:#ffffff;"><button>Mountains</button></a>
         <a href="golden.html" style="color:#ffffff;"><button>Golden</button></a>
+        <a href="south_colorado.html" style="color:#ffffff;"><button>South Colorado</button></a>
         <center>
         <h1 style="color:#ffffff;" class="center">Quality Running</h1>
         <br>
         <br>
 
         <h2 style="color:#ffffff;" class="center">Magnolia</h2>
-        <iframe class="alltrails" src="https://www.alltrails.com/widget/map/magnolia-84453be?u=i&sh=qabqfh" width="600" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="AllTrails: Trail Guides and Maps for Hiking, Camping, and Running"></iframe>
+        <button onclick="hideShow('magnolia')">Show/Hide Magnolia</button>
+        <div id="magnolia" class="iframe-container">
+            <iframe class="alltrails" src="https://www.alltrails.com/widget/map/magnolia-84453be?u=i&sh=qabqfh" width="600" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="AllTrails: Trail Guides and Maps for Hiking, Camping, and Running"></iframe>
+        </div>
         <h4 style="color:#ffffff;" class="center">Classic run in the mountains. Very famous. Good for long runs.</h4>
         <br>
         <br>
 
         <h2>Rollinsville</h2>
-        <iframe class="alltrails" src="https://www.alltrails.com/widget/map/rollinsville-db9e6ee?u=i&sh=qabqfh" width="600" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="AllTrails: Trail Guides and Maps for Hiking, Camping, and Running"></iframe>
+        <button onclick="hideShow('rollinsville')">Show/Hide Rollinsville</button>
+        <div id="rollinsville" class="iframe-container">
+            <iframe class="alltrails" src="https://www.alltrails.com/widget/map/rollinsville-db9e6ee?u=i&sh=qabqfh" width="600" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="AllTrails: Trail Guides and Maps for Hiking, Camping, and Running"></iframe>
+        </div>
         <h4>Famous long run.</h4>
         <br>
         <br>
 
         <h2>Gold Hill</h2>
-        <iframe class="alltrails" src="https://www.alltrails.com/widget/map/gold-hill-801272e?u=i&sh=qabqfh" width="600" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="AllTrails: Trail Guides and Maps for Hiking, Camping, and Running"></iframe>
+        <button onclick="hideShow('goldHill')">Show/Hide Gold Hill</button>
+        <div id="goldHill" class="iframe-container">
+            <iframe class="alltrails" src="https://www.alltrails.com/widget/map/gold-hill-801272e?u=i&sh=qabqfh" width="600" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="AllTrails: Trail Guides and Maps for Hiking, Camping, and Running"></iframe>
+        </div>
         <h4>Famous hilly mountain run. Hard long run.</h4>
         <br>
         <br>
 
         <h2>Dillon Reservoir</h2>
-        <iframe class="alltrails" src="https://www.alltrails.com/widget/map/dillon-reservoir-70afbf2?u=i&sh=qabqfh" width="600" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="AllTrails: Trail Guides and Maps for Hiking, Camping, and Running"></iframe>
+        <button onclick="hideShow('dillonReservoir')">Show/Hide Gold Hill</button>
+        <div id="dillonReservoir" class="iframe-container">
+            <iframe class="alltrails" src="https://www.alltrails.com/widget/map/dillon-reservoir-70afbf2?u=i&sh=qabqfh" width="600" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="AllTrails: Trail Guides and Maps for Hiking, Camping, and Running"></iframe>
+        </div>
         <h4>Asphalt bike path. Some people like it.</h4>
         <br>
         <br>
 
         <h2>Lake Granby</h2>
-        <iframe class="alltrails" src="https://www.alltrails.com/widget/map/granby-b9ed18a?u=i&sh=qabqfh" width="600" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="AllTrails: Trail Guides and Maps for Hiking, Camping, and Running"></iframe>
+        <button onclick="hideShow('lakeGranby')">Show/Hide Gold Hill</button>
+        <div id="lakeGranby" class="iframe-container">
+            <iframe class="alltrails" src="https://www.alltrails.com/widget/map/granby-b9ed18a?u=i&sh=qabqfh" width="600" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="AllTrails: Trail Guides and Maps for Hiking, Camping, and Running"></iframe>
+        </div>
         <h4>Dirt road alongside Lake Granby.</h4>
         <h4>Good for long runs.</h4>
         <br>
         <br>
 
         <h2>Fraser road</h2>
-        <iframe class="alltrails" src="https://www.alltrails.com/widget/map/fraser-ef1e491?u=i&sh=qabqfh" width="600" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="AllTrails: Trail Guides and Maps for Hiking, Camping, and Running"></iframe>
+        <button onclick="hideShow('fraser')">Show/Hide Gold Hill</button>
+        <div id="fraser" class="iframe-container">
+            <iframe class="alltrails" src="https://www.alltrails.com/widget/map/fraser-ef1e491?u=i&sh=qabqfh" width="600" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="AllTrails: Trail Guides and Maps for Hiking, Camping, and Running"></iframe>
+        </div>
         <h4>A dirt road in Fraser.</h4>
         <br>
         <br>
 
         <h2>Henderson Tailings Pond</h2>
-        <iframe class="alltrails" src="https://www.alltrails.com/widget/map/henderson-tailings-pond-road-b432f34?u=i&sh=qabqfh" width="600" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="AllTrails: Trail Guides and Maps for Hiking, Camping, and Running"></iframe>
+        <button onclick="hideShow('henderson')">Show/Hide Gold Hill</button>
+        <div id="henderson" class="iframe-container">
+            <iframe class="alltrails" src="https://www.alltrails.com/widget/map/henderson-tailings-pond-road-b432f34?u=i&sh=qabqfh" width="600" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="AllTrails: Trail Guides and Maps for Hiking, Camping, and Running"></iframe>
+        </div>
         <h4>A dirt road north of Frisco.</h4>
         <br>
         <br>
 
         <h2>Stagecoach Reservoir</h2>
-        <iframe class="alltrails" src="https://www.alltrails.com/widget/map/stagecoach-b4288d9?u=i&sh=qabqfh" width="600" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="AllTrails: Trail Guides and Maps for Hiking, Camping, and Running"></iframe>
+        <button onclick="hideShow('stagecoach')">Show/Hide Gold Hill</button>
+        <div id="stagecoach" class="iframe-container">
+            <iframe class="alltrails" src="https://www.alltrails.com/widget/map/stagecoach-b4288d9?u=i&sh=qabqfh" width="600" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="AllTrails: Trail Guides and Maps for Hiking, Camping, and Running"></iframe>
+        </div>
         <h4>Dirt road around Stagecoach Reservoir</h4>
         <br>
         <br>
 
         <h2>Tiger Road</h2>
 
+        <script>
+            function hideShow(id) {
+                var x = document.getElementById(id);
+                if (x.style.display === "none" || x.style.display === "") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+        </script>
     </body> </center>
 </html>

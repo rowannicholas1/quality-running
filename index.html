@@ -16,52 +16,37 @@
                     transition-duration: 0.4s;
                     cursor: pointer;
                 }
+                .hidden {
+                    display: none;
+                }
+                .iframe-container {
+                    display: none;
+                }
             </style>
     </head>
     <body bgcolor="#32a86b"> <center>
         <a href="index.html" style="color:#ffffff;"><button>Home</button></a>
-        <a href="Boulder.html" style="color:#ffffff;"><button>Boulder</button></a>
-        <a href="Broomfield.html" style="color:#ffffff;"><button>Broomfield</button></a>
-        <a href="Denver.html" style="color:#ffffff;"><button>Denver</button></a>
+        <a href="boulder.html" style="color:#ffffff;"><button>Boulder</button></a>
+        <a href="broomfield.html" style="color:#ffffff;"><button>Broomfield</button></a>
+        <a href="denver.html" style="color:#ffffff;"><button>Denver</button></a>
         <a href="san_diego.html" style="color:#ffffff;"><button>San Diego</button></a>
-        <a href="Mountains.html" style="color:#ffffff;"><button>Mountains</button></a>
-        <a href="South Denver.html" style="color:#ffffff;"><button>South Denver</button></a>
+        <a href="mountains.html" style="color:#ffffff;"><button>Mountains</button></a>
         <a href="golden.html" style="color:#ffffff;"><button>Golden</button></a>
+        <a href="south_colorado.html" style="color:#ffffff;"><button>South Colorado</button></a>
         <center>
         <h1 style="color:#ffffff;" class="center">Quality Running</h1>
         <br>
         <br>
 
-        <h2>Black Forest</h2>
-        <iframe class="alltrails" src="https://www.alltrails.com/widget/map/black-forest-b43a640?u=i&sh=qabqfh" width="600" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="AllTrails: Trail Guides and Maps for Hiking, Camping, and Running"></iframe>
-        <h4>Dirt loop for easy runs.</h4>
-        <br>
-        <br>
-
-        <h2>Greenland</h2>
-        <iframe class="alltrails" src="https://www.alltrails.com/widget/map/greenland-d83de59?u=i&sh=qabqfh" width="600" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="AllTrails: Trail Guides and Maps for Hiking, Camping, and Running"></iframe>
-        <h4>Dirt road for long runs. connects to some other trails.</h4>
-        <br>
-        <br>
-
-        <h2>Santa Fe</h2>
-        <iframe class="alltrails" src="https://www.alltrails.com/widget/map/santa-fe-243facb?u=i&sh=qabqfh" width="600" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="AllTrails: Trail Guides and Maps for Hiking, Camping, and Running"></iframe>
-        <h4>Dirt road.</h4>
-        <br>
-        <br>
-
-        <h2>La Garita</h2>
-        <iframe class="alltrails" src="https://www.alltrails.com/widget/map/map-may-23-2024-44a2e08?u=i&sh=qabqfh" width="600" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="AllTrails: Trail Guides and Maps for Hiking, Camping, and Running"></iframe>
-        <h4>Some hilly dirt roads. Hard long run.</h4>
-        <br>
-        <br>
-
-        <h2>Lake George</h2>
-        <iframe class="alltrails" src="https://www.alltrails.com/widget/map/map-may-22-2024-7fcb0a2?u=i&sh=qabqfh" width="600" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="AllTrails: Trail Guides and Maps for Hiking, Camping, and Running"></iframe>
-        <h4>Some hilly runs near Lake George. Hard long runs.</h4>
-        <br>
-        <br>
-
-
+        <script>
+            function hideShow(id) {
+                var x = document.getElementById(id);
+                if (x.style.display === "none" || x.style.display === "") {
+                    x.style.display = "block";
+                } else {
+                    x.style.display = "none";
+                }
+            }
+        </script>
     </body> </center>
 </html>
